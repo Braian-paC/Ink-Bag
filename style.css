@@ -1,8 +1,8 @@
 :root {
-    --main-color: #d3ad7f;
+    --main-color: rgb(156, 156, 156);
     --black: #13131a;
     --bg: #f4dcbd;
-    --border: 0.1rem solid #000;
+    --border: 0.5rem solid #000;
     --font-size: 10px;
 }
 
@@ -37,18 +37,23 @@ section {
     left: 0;
     right: 0;
     z-index: 99;
-    border-bottom: var(--border);
+    border-bottom: none;
 }
 
 .header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 0;
 }
 
-/* left navigation layout */
+.header .section {
+    border-bottom: var(--border);
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .navbar{
     display: flex;
     align-items: center;
