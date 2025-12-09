@@ -70,3 +70,46 @@ section {
     width: 40px;
     height: 40px;
 }
+
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-container {
+    background: url("img/home-img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 100rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 6rem;
+    max-width: 50rem;
+    line-height: 1.2;
+}
+
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+    max-width: 50rem;
+}
