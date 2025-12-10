@@ -18,7 +18,12 @@ html {
     text-decoration: none;
     text-transform: none;
     transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Flecha', 'sans-serif';
+}
+
+@font-face {
+    font-family: 'Flecha';
+    src: url('assets/fonts/fontFlecha/FlechaTestS-Bold-BF669881b0e0c95.otf');
 }
 
 body {
@@ -49,7 +54,6 @@ section {
 
 .header .section {
     border-bottom: var(--border);
-    /* inset the border 15rem from each side (left/right) */
     width: calc(100% - 30rem);
     max-width: 1500px;
     margin: 0 15rem;
@@ -68,8 +72,7 @@ section {
 }
 
 .navbar-a:hover {
-    color: var(--main-color);
-    border-bottom: 0.1rem solid var(--main-color);
+    border-bottom: 0.1rem solid;
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
