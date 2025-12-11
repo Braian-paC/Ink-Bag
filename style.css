@@ -17,7 +17,7 @@ html {
     border: none;
     text-decoration: none;
     text-transform: none;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease;
     font-family: 'Flecha', 'sans-serif';
 }
 
@@ -74,11 +74,11 @@ section {
     color: #000;
 }
 
-.navbar div {
+.boxNavbar {
     padding: 3.8rem 0;
 }
 
-.navbar div:hover {
+.boxNavbar:hover {
     border-bottom: 0.5rem solid;
     cursor: pointer;
 }
