@@ -157,7 +157,7 @@ body {
     }
 
     .sectionNavbar {
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .header .sectionNavbar {
@@ -172,74 +172,81 @@ body {
     }
 
     .navbar {
-        flex-direction: column;
+        flex-direction: row; /* Mantém horizontal para caber melhor */
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        justify-content: space-around; /* Distribui os links */
     }
 
     .boxNavbar {
-        padding: 0.5rem 0;
-        padding-right: 0;
+        padding: 0;
+        flex: 1;
+        justify-content: center;
     }
 
     .navbar-a {
-        font-size: 1.5rem;
-        padding: 1rem 0;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        height: auto;
     }
 
     .logo img {
-        height: 60px;
+        height: 50px;
     }
 
     .icons {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.5rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        justify-content: center;
     }
 
     .icones {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
     .about-container {
-        margin-top: 10rem; /* Ajusta para o header menor */
+        margin-top: 25rem; /* Aumenta para compensar header */
     }
 
     .about-container section {
-        padding: 0 2rem; /* Reduz padding lateral */
-        flex-direction: column;
-        text-align: center;
+        padding: 0 1rem; /* Reduz ainda mais */
+        min-height: auto; /* Remove altura mínima fixa */
     }
 
     .about-container h3 {
-        font-size: 5rem; /* Reduz tamanho do título */
-        margin: 0 0 2rem 0;
+        font-size: 4rem; /* Reduz mais */
+        margin: 0 0 1rem 0;
     }
 
     .about-container p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
     :root {
-        --font-size: 7px; /* Ainda menor para telas muito pequenas */
+        --font-size: 6px; /* Ainda menor para telas muito pequenas */
     }
 
     .about-container h3 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .about-container p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .navbar-a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .logo img {
-        height: 50px;
+        height: 40px;
+    }
+
+    .about-container {
+        margin-top: 20rem; /* Ajusta novamente */
     }
 }
