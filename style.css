@@ -146,3 +146,100 @@ body {
 .about-container p {
     font-size: 2rem;
 }
+
+/* COMEÇO DA ALTERAÇÃO */
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    :root {
+        --font-size: 8px; /* Reduz o tamanho base da fonte para mobile */
+    }
+
+    .sectionNavbar {
+        padding: 1rem;
+    }
+
+    .header .sectionNavbar {
+        margin: 0;
+        width: 100%;
+        border-bottom: var(--border);
+    }
+
+    .header section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .boxNavbar {
+        padding: 0.5rem 0;
+        padding-right: 0;
+    }
+
+    .navbar-a {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .icones {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-container {
+        margin-top: 10rem; /* Ajusta para o header menor */
+    }
+
+    .about-container section {
+        padding: 0 2rem; /* Reduz padding lateral */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container h3 {
+        font-size: 5rem; /* Reduz tamanho do título */
+        margin: 0 0 2rem 0;
+    }
+
+    .about-container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size: 7px; /* Ainda menor para telas muito pequenas */
+    }
+
+    .about-container h3 {
+        font-size: 4rem;
+    }
+
+    .about-container p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-a {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+}
