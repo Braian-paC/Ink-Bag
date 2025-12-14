@@ -17,7 +17,7 @@ html {
     border: none;
     text-decoration: none;
     text-transform: none;
-    transition: 0.2s ease;
+    transition: 0.4s ease;
     font-family: 'Flecha', 'sans-serif';
 }
 
@@ -30,10 +30,11 @@ body {
     background-color: var(--bg);
 }
 
-section {
+.sectionNavbar {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1500px;
+    
 }
 
 .header {
@@ -52,7 +53,7 @@ section {
     padding: 0;
 }
 
-.header .section {
+.header .sectionNavbar {
     border-bottom: var(--border);
     width: calc(100% - 10rem);
     max-width: 1500px;
@@ -60,7 +61,7 @@ section {
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     flex: 1;
@@ -68,21 +69,21 @@ section {
 }
 
 .navbar-a {
+    height: 1.9rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     color: #000;
-    padding: 4rem 0;
-}
-
-#boxProducts, #boxContact {
-    margin-left: 4rem;
+    padding: 3.8rem 0;
+    line-height: 1;
 }
 
 .boxNavbar {
-    padding: 3.8rem 0;
+    display: flex;
+    padding-right: 3rem;
+    justify-content: center;
 }
 
-.boxNavbar:hover {
+.navbar-a:hover {
     border-bottom: 0.5rem solid;
     cursor: pointer;
 }
